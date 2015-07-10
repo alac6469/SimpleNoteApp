@@ -1,0 +1,27 @@
+README
+
+Simple Note Taker App
+
+By: Alex Ackerman
+
+This is a very simple note taking app.  I utilized an online service
+called Parse as a cloud-hosted backend.  Parse provides a JavaScript
+SDK that makes some of the backend interaction much easier.  I also
+used Twitter Bootstrap elements just to make it look a little bit nicer.
+Given more time I would have put greater effort into using Bootstrap to
+make the app more responsive to varying screen sizes.
+
+A note can be saved on one device, and when a user navigates back to the
+app, the previously saved note is displayed and can be edited.
+
+Shortcomings/hacks/deficiences/etc.:
+-no user/account considerations
+-security is obviously non-existent
+-I placed a "starter" object in the database so that I did not have to
+handle the case in which it was empty.
+-only ability to handle one note
+-concurrency issues could occur if multiple people opened the app and
+tried to edit at the same time...but that is related to having no users
+-I have had the app crash a couple of times but I did not put much
+effort into solving it as I think it had something to with Parse not
+receiving the HTTP request...If this happens simply refresh page
